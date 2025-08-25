@@ -10,7 +10,6 @@
 #
 # # Беремо зріз і друкуємо
 # print(string.ascii_letters[start_index:end_index+1])
-from tkinter.font import names
 
 # import string
 #
