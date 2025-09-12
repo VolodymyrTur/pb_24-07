@@ -247,6 +247,6 @@
 #
 # print(locals())
 
-# from module.main import *
+# from package.main import *
 
-# from module import main_func
+# from package import main_func
