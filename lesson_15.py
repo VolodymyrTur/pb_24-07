@@ -238,23 +238,6 @@
 # print(cat)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # class Cat:
 #     def __init__(self, name, age, color):
 #         self.name = name
@@ -267,6 +250,12 @@
 #     def __getattribute__(self, item):
 #         return object.__getattribute__(self, item)
 #
+#     def __getattr__(self, item):
+#         print(f"__getattr__({item})")
+#         if item == "type":
+#             return "Stray Cat"
+#         return None
+#
 #     def __setattr__(self, key, value):
 #         print(f"__setattr__({key, value})")
 #         self.__dict__[key] = value
@@ -275,35 +264,15 @@
 #         print(f"__delattr__({item})")
 #         del self.__dict__[item]
 #
-#
+
 # cat = Cat("Vasyl", 2, "Black")
 # cat.bread = "Siamese"
+# print(cat.type)
 # print(cat.__dict__)
 # del cat.bread
 # print(cat.__dict__)
 #
 # delattr(cat, "name")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -715,16 +684,16 @@
 # print(b.__next__())
 # print(b.__next__())
 
-class Goods:
-    def __init__(self, name, price):
-        self.name = name
-        self.price = price
-
-    def __repr__(self):
-        return f"Goods(name='{self.name}', price={self.price})"
-
-    def __str__(self):
-        return f"{self.name} - {self.price}"
+# class Goods:
+#     def __init__(self, name, price):
+#         self.name = name
+#         self.price = price
+#
+#     def __repr__(self):
+#         return f"Goods(name='{self.name}', price={self.price})"
+#
+#     def __str__(self):
+#         return f"{self.name} - {self.price}"
 
 
 # class Basket:
